@@ -45,8 +45,6 @@ function calculate_resistance() {
     fi
 }
 
-#echo "${colors["black"]}"
-
 function main() {
     calculate_resistance "$@"
 }
