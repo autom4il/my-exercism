@@ -10,7 +10,7 @@ function check_len_string () {
 str1=$1
 str2=$2
 
-if ! [[ ${#str1} == ${#str2} ]]
+if ! [[ ${#str1} == "${#str2}" ]]
 then
     echo "Input strings must be of equal length"
     exit 1
