@@ -12,7 +12,7 @@ str2=$2
 
 if ! [[ ${#str1} == ${#str2} ]]
 then
-    echo "strands must be of equal length"
+    echo "Input strings must be of equal length"
     exit 1
 fi
 
