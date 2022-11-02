@@ -32,9 +32,9 @@ while [[ $x -lt ${#str1} ]]
 
     if ! [[ $x_char == "$y_char" ]]
     then
-      counter=$(( $counter + 1 ))
+      counter=$(( counter + 1 ))
     fi
-    x=$(( $x + 1 ))
+    x=$(( x + 1 ))
 done
 echo $counter 
 
