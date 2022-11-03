@@ -10,9 +10,9 @@ function check_len_string () {
 str1=$1
 str2=$2
 
-if ! [[ ${#str1} == ${#str2} ]]
+if ! [[ ${#str1} == "${#str2}" ]]
 then
-    echo "strands must be of equal length"
+    echo "Input strings must be of equal length"
     exit 1
 fi
 
@@ -32,9 +32,9 @@ while [[ $x -lt ${#str1} ]]
 
     if ! [[ $x_char == "$y_char" ]]
     then
-      counter=$(( $counter + 1 ))
+      counter=$(( counter + 1 ))
     fi
-    x=$(( $x + 1 ))
+    x=$(( x + 1 ))
 done
 echo $counter 
 
